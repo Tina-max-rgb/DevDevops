@@ -11,13 +11,14 @@
     }
   },
   "scripts": {
-    "lint": "php-cs-fixer fix --dry-run --diff src tests",
-    "analyse": "phpstan analyse src tests",
-    "test": "phpunit --coverage-html build/coverage",
-    "check": [
-      "@lint",
-      "@analyse",
-      "@test"
-    ]
-  }
+  "lint": "vendor/bin/php-cs-fixer fix --dry-run --diff src tests",
+  "analyse": "phpstan analyse src tests",
+  "test": "phpunit --coverage-html build/coverage",
+  "check": [
+    "@lint",
+    "@analyse",
+    "@test"
+  ]
+}
+
 }
