@@ -34,6 +34,9 @@ jobs:
       - name: Make php-cs-fixer executable
         run: chmod +x vendor/bin/php-cs-fixer
 
+      - name: Make phpunit executable
+        run: chmod +x vendor/bin/phpunit
+
       - name: Lint code
         run: composer lint
 
