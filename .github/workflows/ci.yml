@@ -28,6 +28,11 @@ jobs:
       - name: Install dependencies
         run: composer install
 
+      - name: Make phpstan executable
+        run: chmod +x vendor/bin/phpstan
+
+      - name: Make php-cs-fixer executable
+        run: chmod +x vendor/bin/php-cs-fixer
 
       - name: Lint code
         run: composer lint
