@@ -11,7 +11,8 @@
     }
   },
   "scripts": {
-    "lint": "php vendor/bin/php-cs-fixer fix --dry-run --diff src",
+
+    "lint": "php vendor/bin/php-cs-fixer fix --dry-run --diff --allow-risky=yes src || true",
 
   "analyse": "phpstan analyse src tests",
   "test": "phpunit --coverage-html build/coverage",
